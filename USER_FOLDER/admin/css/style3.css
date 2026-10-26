@@ -1,0 +1,259 @@
+/* =========================================
+   GLOBAL
+========================================= */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+.page-header {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 30px;
+    border-left: 4px solid #F26024;
+    box-shadow:
+        rgba(0, 0, 0, 0.08) 0px 1px 3px,
+        rgba(0, 0, 0, 0.04) 0px 1px 2px;
+}
+
+.page-header h5 {
+    font-weight: 600;
+    color: #333;
+}
+
+#btn-Publish {
+    background-color: #F26024;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+
+#btn-Publish:hover {
+    background-color: #d94f18;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   MODAL
+   (no height override on .modal-dialog, so
+    modal-dialog-scrollable keeps working)
+========================================= */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #333;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #eeeeee;
+    padding: 15px 25px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Form labels (scoped so the upload box label is not affected) */
+.modal-body label:not(.upload-label) {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.form-control {
+    min-height: 42px;
+    padding: 0 12px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #F26024;
+    box-shadow: 0 0 0 0.15rem rgba(242, 96, 36, 0.15);
+}
+
+textarea.form-control {
+    min-height: auto;
+    padding: 10px 12px;
+    resize: none;
+}
+
+/* =========================================
+   IMAGE UPLOAD
+========================================= */
+.image-upload-box {
+    width: 100%;
+}
+
+.upload-label {
+    width: 100%;
+    height: 320px;
+    border: 2px dashed #F26024;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fffaf8;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.upload-label:hover {
+    border-color: #d94f18;
+    background-color: #fff3ee;
+}
+
+.upload-icon {
+    font-size: 48px;
+    color: #F26024;
+    margin-bottom: 12px;
+}
+
+.upload-label h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.upload-label p {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.upload-label span {
+    display: inline-block;
+    font-size: 11px;
+    color: #F26024;
+    font-weight: 600;
+}
+
+#imagePreview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================
+   MODAL BUTTONS
+========================================= */
+.modal-footer .btn-secondary {
+    border-radius: 0;
+    padding: 10px 22px;
+    font-size: 14px;
+}
+
+#btn-Publish1 {
+    background-color: #F26024;
+    color: #ffffff;
+    border: 1px solid #F26024;
+    border-radius: 0;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#btn-Publish1:hover {
+    background-color: #d94f18;
+    border-color: #d94f18;
+    color: #ffffff;
+}
+
+/* =========================================
+   REQUIRED FIELD
+========================================= */
+.text-danger {
+    color: #F26024 !important;
+}
+
+/* =========================================
+   PRODUCT TABLE (scoped to .table-body)
+========================================= */
+.table-body table,
+.table-body th,
+.table-body td {
+    font-size: 13px;
+    border: 1px solid #eee;
+}
+
+.table-body .sno {
+    padding-left: 15px;
+}
+
+.table-body a {
+    text-decoration: none;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 991px) {
+    .image-upload-box {
+        margin-top: 15px;
+    }
+
+    .upload-label {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 18px 15px;
+    }
+
+    #btn-Publish {
+        padding: 8px 14px;
+    }
+
+    .modal-body {
+        padding: 18px;
+    }
+
+    .modal-header {
+        padding: 15px 18px;
+    }
+
+    .modal-footer {
+        padding: 15px 18px;
+    }
+
+    .upload-label {
+        height: 220px;
+    }
+}

@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #FDEAEC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  display: block;
+}
+
+.login-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  margin: 70px auto;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #E75480;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-container button:hover {
+  background: #E75480;
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-container a {
+  color: #E75480;
+  text-decoration: none;
+}
+
+.brand-link { display: block; text-align: center; font-family: Georgia, serif; font-size: 24px; font-style: italic; font-weight: 700; margin-bottom: 8px; }
+.form-copy { color: #71686c; margin: -10px 0 14px; text-align: center; font-size: 14px; }
+.login-container label { display: block; color: #544b4f; font-size: 13px; font-weight: 600; margin-top: 12px; }
+.login-container input[type="email"] { width: 100%; padding: 10px; margin: 8px 0 0; border: 1px solid #ccc; border-radius: 5px; }
+.form-message { color: #b4233f; font-size: 13px; margin: 10px 0 0; text-align: left; }
+.back-link { margin-bottom: 0; }

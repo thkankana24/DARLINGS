@@ -1,0 +1,136 @@
+:root
+ { 
+    --pink: #e75480; 
+    --ink: #2b2226;
+     --muted: #766e72; 
+     --line: #efe5e9; 
+     --soft: #fff4f7; 
+    }
+* { 
+    box-sizing: border-box;
+ }
+body { 
+    margin: 0; background: #fcfafb;
+     color: var(--ink); 
+     font-family: Arial, sans-serif;
+      font-size: 14px; 
+      line-height: 1.5;
+    }
+.orders-header
+ { 
+    min-height: 66px; 
+    background: #fff; 
+    border-bottom: 1px solid var(--line);
+     padding: 0 7%; 
+     display: flex; 
+     align-items: center; 
+     justify-content: space-between; 
+     gap: 15px; 
+    }
+.orders-header a
+ {
+     color: var(--muted);
+     text-decoration: none;
+      font-size: 14px; 
+    }
+      .orders-header a:hover
+       { 
+        color: var(--pink); 
+    }
+.orders-header .orders-brand
+ { 
+    font: italic 600 25px Georgia, serif;
+     color: var(--pink);
+     }
+.orders-wrap
+ {
+     width: min(760px, 90%);
+     margin: 0 auto;
+      padding: 56px 0 80px; 
+    }
+      .eyebrow
+       { 
+        margin: 0 0 8px; 
+        color: var(--pink); 
+        font-size: 11px; 
+        letter-spacing: 2px;
+         font-weight: 700; 
+        }
+        .orders-heading h1 
+        {
+             margin: 0; 
+             font-size: 34px;
+             }
+             .orders-heading > p:last-child 
+             {
+                 color: var(--muted);
+                  margin-bottom: 30px;
+                 }
+.order-card 
+{
+     background: #fff;
+      border: 1px solid var(--line);
+       border-radius: 16px;
+        margin: 18px 0;
+         overflow: hidden; 
+         box-shadow: 0 5px 18px rgba(43,34,38,.04); 
+        }
+        .order-top
+         { 
+            display: flex;
+             justify-content: space-between;
+              gap: 18px; padding: 20px;
+             }
+             .order-top h2 
+             { font-size: 17px; 
+                margin: 8px 0 4px; 
+            }
+            .order-top p 
+            {
+                 margin: 0; 
+                 color: var(--muted); 
+                 font-size: 13px; 
+                }
+                .status 
+                {
+                     display: inline-block; 
+                     color: #287248; 
+                     background: #e8f7ed;
+                      padding: 4px 9px;
+                       border-radius: 12px; 
+                       font-size: 11px; 
+                       font-weight: 700;
+                     }
+                     .order-total
+                      { 
+                        color: var(--pink); 
+                        white-space: nowrap; 
+                    }
+                    ul
+                     {
+                         list-style: none;
+                          padding: 0; 
+                          margin: 0; 
+                          border-top: 1px solid var(--line);
+                         }
+                         li 
+                         { display: flex;
+                             align-items: center;
+                              gap: 12px;
+                               padding: 13px 20px;
+                                border-bottom: 1px solid var(--line); 
+                                font-size: 14px;
+                             }
+                             li:last-child
+                              {
+                                 border: 0;
+                                 }
+                                 li img 
+                                 {
+                                     height: 48px;
+                                      width: 42px;
+                                       object-fit: cover;
+                                        border-radius: 7px; 
+                                        background: var(--soft);
+                                     }li span { flex: 1; }li small { display: block; color: var(--muted); margin-top: 4px; }.order-foot { padding: 14px 20px; background: var(--soft); color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; gap: 12px; }.empty-orders { padding: 44px 25px; text-align: center; background: #fff; border: 1px solid var(--line); border-radius: 16px; }.empty-orders h2 { margin-top: 0; }.empty-orders p { color: var(--muted); }.empty-orders a { display: inline-block; background: var(--pink); color: #fff; padding: 11px 18px; border-radius: 9px; text-decoration: none; font-size: 14px; }
+@media (max-width: 520px) { .orders-header { padding: 0 5%; }.orders-wrap { padding-top: 36px; }.order-top, .order-foot { flex-direction: column; }.order-total { align-self: flex-start; } }
